@@ -1,7 +1,7 @@
 {
   "name": "generate-certs",
-  "version": "1.0.0",
-  "description": "Generates local SSL certificates for development",
+  "version": "1.0.1",
+  "description": "Generates easily SSL certificates for local development",
   "author": "WolfieLeader",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -25,21 +25,28 @@
     "lint": "eslint src/",
     "typecheck": "tsc --noEmit"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WolfieLeader/generate-certs"
+  },
+  "bugs": {
+    "url": "https://github.com/WolfieLeader/generate-certs/issues"
+  },
   "dependencies": {
     "node-forge": "^1.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
-    "@types/node": "^20.17.6",
+    "@types/node": "^20.17.8",
     "@types/node-forge": "^1.3.11",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.12.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.0",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.15.0"
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0"
   },
   "keywords": [
     "ssl",
