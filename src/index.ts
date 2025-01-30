@@ -6,7 +6,7 @@ export interface GenerateCertsOptions {
   log?: boolean;
 }
 
-function generateCerts({ certsDir, log = true }: GenerateCertsOptions) {
+export function generateCerts({ certsDir, log = true }: GenerateCertsOptions) {
   const exitingCerts = checkForExistingCerts({ certsDir, log });
   if (exitingCerts) return exitingCerts;
   return generateNewCerts({ certsDir, log });
@@ -35,5 +35,3 @@ function generateNewCerts({ certsDir, log = true }: GenerateCertsOptions) {
     throw new Error('Error in generating new certificates.');
   }
 }
-
-export default generateCerts;
